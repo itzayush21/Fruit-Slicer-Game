@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/themes/smoothness/jquery-ui.css">
+  </head>
+  <body class="body">
+    <h1 id="header"></h1>
+    <div class="facbook" id="facebook">
+      <p class="w">G</p>
+      <p class="w">A</p>
+      <p class="w">M</p>
+      <p class="w">E</p>
+      <p class="w">Z</p>
+      <p class="w">O</p>
+      <p class="w">N</p>
+      <p class="w">E</p>
+    </div>
+    <div class="game-box" style="display: flex;">
+        <div class="trails" id="trails" style="background-color:lightgreen;align-self:flex-start;margin-top:10px;margin-left:10px;height:30px;width: 100px;border-radius:5px;position: absolute;display:flex;justify-content:center;align-items:center;">
+          <p></p>
+        </div>
+        <div class="score" style="background-color:aqua;
+          align-self:end;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          height:30px;width: 80px;
+          margin-top: 10px;
+          margin-right:10px;
+          margin-bottom:0px;
+          padding-top:5px;
+          border-radius:5px;
+          ">
+           Score:<span id="game-score"></span>
+        </div>
+        <div class="display1">
+            <img id="fruit1" class="fruit">
+            <div class="gameover" id="gameover" style="background-color:orange;color:white;position:relative;left:170px;top:39px;height:50%;width:50%;display:none;justify-content:center;text-align: center;
+              font:bolder;font-size: 25px;
+              ">
+              <p style="padding-top:90px;">Game over Score is:<span id="game-score"></span></p>
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="startGameButton">Start Game</button>
+        </div>
+      <audio id="slicesound">
+          <source src="/sword.mp3"></source>
+      </audio>
+      <button type="button" class="pauseGameButton" id="pauseGameButton"> PAUSE </button>
+      
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
